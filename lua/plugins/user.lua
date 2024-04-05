@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
@@ -82,4 +80,27 @@ return {
       )
     end,
   },
+  {
+    "kaarmu/typst.vim",
+    ft = { "typst" },
+  },
+  { "tjdevries/colorbuddy.nvim" },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function(_, opts)
+      opts.context_commentstring = nil
+      opts.prefer_git = true
+    end,
+  },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+          visible = true,
+        },
+      },
+    },
+  },
+  { "ellisonleao/gruvbox.nvim", priority = 1000 },
 }
