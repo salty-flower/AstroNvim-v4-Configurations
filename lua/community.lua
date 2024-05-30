@@ -8,6 +8,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   -- { import = "astrocommunity.colorscheme.neosolarized-nvim" },
+  -- configured in plugins/user.lua manually instead
   { import = "astrocommunity.pack.ps1" },
   { import = "astrocommunity.pack.ansible" },
   { import = "astrocommunity.pack.cs" },
