@@ -110,4 +110,8 @@ return {
     },
   },
   { "ellisonleao/gruvbox.nvim", priority = 1000 },
+  {
+    "Tsuzat/NeoSolarized.nvim",
+    lazy = false,
+  },
 }
