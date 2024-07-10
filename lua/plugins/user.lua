@@ -45,7 +45,7 @@ return {
   },
 
   -- You can disable default plugins as follows:
-  { "max397574/better-escape.nvim", enabled = false },
+  { "max397574/better-escape.nvim" },
 
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   {
@@ -113,5 +113,9 @@ return {
   {
     "Tsuzat/NeoSolarized.nvim",
     lazy = false,
+  },
+  {
+    "rcarriga/nvim-notify",
+    opts = function(_, opts) opts.background_colour = "#35374B" end,
   },
 }
