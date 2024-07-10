@@ -22,6 +22,7 @@ return {
   { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.kotlin" },
+  { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.pack.dart" },
   { import = "astrocommunity.pack.scala" },
   { import = "astrocommunity.pack.markdown" },
