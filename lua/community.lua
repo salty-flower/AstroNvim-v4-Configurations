@@ -3,6 +3,7 @@
 -- This guarantees that the specs are processed before any user plugins.
 
 ---@type LazySpec
+---@version JIT
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
@@ -10,7 +11,10 @@ return {
   -- { import = "astrocommunity.colorscheme.neosolarized-nvim" },
   -- configured in plugins/user.lua manually instead
   { import = "astrocommunity.pack.ps1" },
-  { import = "astrocommunity.pack.ansible" },
+  {
+    import = "astrocommunity.pack.ansible",
+    enabled = function() return jit.os == "Linux" end,
+  },
   { import = "astrocommunity.pack.cs" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.json" },

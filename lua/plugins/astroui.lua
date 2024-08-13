@@ -9,7 +9,7 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "NeoSolarized",
+    colorscheme = vim.g.neovide and "gruvbox" or "NeoSolarized",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes

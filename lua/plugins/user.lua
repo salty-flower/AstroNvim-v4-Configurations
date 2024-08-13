@@ -109,10 +109,11 @@ return {
       },
     },
   },
-  { "ellisonleao/gruvbox.nvim", priority = 1000 },
+  { "ellisonleao/gruvbox.nvim", cond = vim.g.neovide },
   {
     "Tsuzat/NeoSolarized.nvim",
     lazy = false,
+    cond = not vim.g.neovide,
   },
   {
     "rcarriga/nvim-notify",
